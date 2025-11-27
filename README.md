@@ -1,6 +1,28 @@
-# small-tor-and-tails-learning-resources
+# Tor and Tails Security Learning Resources
 
-# Tor Security Learning Guide
+A curated collection of resources for learning about Tor network security, Tails OS, and privacy-focused technologies. This guide is designed for individuals seeking to enhance their online privacy and security through open-source tools and best practices.
+
+## Table of Contents
+
+- [START HERE: Essential Setup](#start-here-essential-setup)
+- [Critical Security Practices](#critical-security-practices)
+- [Understanding Tor Browser Security Levels](#understanding-tor-browser-security-levels)
+- [Core Privacy Tools & Documentation](#core-privacy-tools--documentation)
+- [Key Technologies to Learn](#key-technologies-to-learn)
+- [Onion Service Directories](#onion-service-directories)
+- [Educational Videos](#educational-videos)
+- [Background Reading](#background-reading)
+- [Comprehensive Privacy Guides](#comprehensive-privacy-guides)
+- [Community Resources & Best Practices](#community-resources--best-practices)
+- [Privacy & Rights Organizations](#privacy--rights-organizations)
+- [Recommended Learning Path](#recommended-learning-path)
+- [Common Mistakes to Avoid](#common-mistakes-to-avoid)
+- [Special Considerations for Singapore Users](#special-considerations-for-singapore-users)
+- [Additional GitHub Resources](#additional-github-resources)
+- [Emergency Resources](#emergency-resources)
+- [Remember](#remember)
+
+---
 
 ## START HERE: Essential Setup
 
@@ -32,42 +54,6 @@
 
 ---
 
-## Core Privacy Tools & Documentation
-
-### Operating Systems
-- **Tails** (amnesic live OS): https://tails.net/
-- **QubesOS** (security-focused OS): https://www.qubes-os.org/
-- **Whonix** (anonymity-focused OS): https://www.whonix.org/
-
-### Encryption & Storage
-- **VeraCrypt** (disk encryption): https://veracrypt.io/en/Documentation.html
-- **OnionShare** (secure file sharing over Tor): https://onionshare.org/
-
-### Secure Communication
-- **Signal** (encrypted messaging): https://signal.org/
-- **ProtonMail** (encrypted email): https://proton.me/mail
-
-### VPN Services
-- **Mullvad VPN**: https://mullvad.net/en
-- **ProtonVPN**: https://protonvpn.com/
-
-### Password Management
-- **Bitwarden**: https://bitwarden.com/
-- **KeePassXC**: https://keepassxc.org/
-
----
-
-## Key Technologies to Learn
-
-- **PGP/GPG** (Pretty Good Privacy - encryption)
-- **Proxy chains** (routing traffic through multiple proxies)
-- **Darknet Bible** (comprehensive reference guide)
-- **Tor Bridges** (censorship circumvention)
-- **End-to-End Encryption (E2EE)**
-- **Operational Security (OpSec)**
-
----
-
 ## Understanding Tor Browser Security Levels
 
 Tor Browser offers three security levels that can be accessed by clicking the shield icon:
@@ -96,10 +82,45 @@ Tor Browser offers three security levels that can be accessed by clicking the sh
 
 ---
 
+## Core Privacy Tools & Documentation
+
+### Operating Systems
+- **Tails** (amnesic live OS): https://tails.net/
+- **QubesOS** (security-focused OS): https://www.qubes-os.org/
+- **Whonix** (anonymity-focused OS): https://www.whonix.org/
+
+### Encryption & Storage
+- **VeraCrypt** (disk encryption): https://veracrypt.io/en/Documentation.html
+- **OnionShare** (secure file sharing over Tor): https://onionshare.org/
+
+### Secure Communication
+- **Signal** (encrypted messaging): https://signal.org/
+- **ProtonMail** (encrypted email): https://proton.me/mail
+
+### VPN Services
+- **Mullvad VPN**: https://mullvad.net/en
+- **ProtonVPN**: https://protonvpn.com/
+
+### Password Management
+- **Bitwarden**: https://bitwarden.com/
+- **KeePassXC**: https://keepassxc.org/
+- **NordPass**: https://nordpass.com/
+
+---
+
+## Key Technologies to Learn
+
+- **PGP/GPG** (Pretty Good Privacy - encryption)
+- **Proxy chains** (routing traffic through multiple proxies)
+- **Darknet Bible** (comprehensive reference guide)
+- **Tor Bridges** (censorship circumvention)
+- **End-to-End Encryption (E2EE)**
+- **Operational Security (OpSec)**
+
+---
+
 ## Onion Service Directories
-
-(do not trust them completely)
-
+(do not trust completely)
 - dark.fail
 - Tor.li
 - Daunt.link
@@ -129,8 +150,9 @@ Tor Browser offers three security levels that can be accessed by clicking the sh
 
 ---
 
-## Background Reading (Wikipedia)
+## Background Reading
 
+### Wikipedia
 - **Dark web overview**: https://en.wikipedia.org/wiki/Dark_web
 - **The Hidden Wiki**: https://en.wikipedia.org/wiki/The_Hidden_Wiki
 - **DeepDotWeb**: https://en.wikipedia.org/wiki/DeepDotWeb
@@ -210,20 +232,6 @@ Tor Browser offers three security levels that can be accessed by clicking the sh
 
 ---
 
-## Why BitTorrent and Tor Don't Mix
-
-BitTorrent over Tor is extremely dangerous for your anonymity:
-
-1. **IP Address Leakage**: Many BitTorrent clients ignore proxy settings and send your real IP address directly to trackers and peers
-2. **Protocol Design**: BitTorrent's peer-to-peer nature means all participants can see each other's IP addresses
-3. **DHT Exposure**: The Distributed Hash Table (DHT) uses UDP which Tor doesn't support, forcing clients to use your real network connection
-4. **Port Information**: Clients share listening port information that can be correlated to identify you
-5. **Network Strain**: BitTorrent traffic overloads the volunteer-run Tor network
-
-The Tor Project explicitly recommends against using BitTorrent over Tor. If you need to torrent anonymously, use a VPN service designed for P2P traffic instead.
-
----
-
 ## Special Considerations for Singapore Users
 
 ### Legal Status
@@ -265,6 +273,39 @@ The Tor Project explicitly recommends against using BitTorrent over Tor. If you 
 
 ---
 
+## Additional GitHub Resources
+
+### Awesome Lists & Comprehensive Guides
+- **awesome-tor**: https://github.com/ajvb/awesome-tor - Comprehensive list of Tor-related projects, articles, and papers
+- **awesome-tor (Polycarbohydrate)**: https://github.com/Polycarbohydrate/awesome-tor - Another curated list with focus on censorship bypass
+- **awesome-privacy**: https://github.com/Lissy93/awesome-privacy - Extensive privacy and security-focused software list
+- **awesome-privacy (KevinColemanInc)**: https://github.com/KevinColemanInc/awesome-privacy - Privacy tools with VPN comparisons
+- **awesome-privacy (awesomelistsio)**: https://github.com/awesomelistsio/awesome-privacy - Curated privacy tools and resources
+- **awesome-privacy-tools**: https://github.com/iAnonymous3000/awesome-privacy-tools - Privacy tools balancing security and convenience
+
+### Tails OS Guides & Resources
+- **Tails-OS-Guide**: https://github.com/diegoamorosor/Tails-OS-Guide - Comprehensive guide for Tails OS installation and usage
+- **run-on-tails**: https://github.com/dutu/run-on-tails - Collection of guides for running apps on Tails OS
+- **dive-into-tails**: https://github.com/patrick-blom/dive-into-tails - Tutorial for customizing Tails OS
+- **how-to-setup-tails-os-vm**: https://github.com/SuleimanGithub/how-to-setup-tails-os-vm - Guide for running Tails in virtual machine
+- **tails-os-complete-guide**: https://github.com/Pinaki82/Debian-minimal/blob/main/tails-os-complete-guide.md - Complete Tails OS guide
+- **Tails OS Tips**: https://gist.github.com/ChristopherA/66f154dd963c0df3526f4864d917e375 - Practical tips for Tails usage
+- **bash-dotfiles-for-tails**: https://github.com/ChristopherA/bash-dotfiles-for-tails - Bash configuration for Tails
+
+### Official Tor Project Resources
+- **Tor Browser Manual**: https://github.com/torproject/manual - Official Tor Browser user manual repository
+- **Tor Project GitHub**: https://github.com/torproject/ - Official mirrors of Tor code
+- **TheTorProject GitHub**: https://github.com/thetorproject - Additional Tor Project repositories
+
+### Topic-Specific Resources
+- **GitHub Topics - tor**: https://github.com/topics/tor
+- **GitHub Topics - tor-network**: https://github.com/topics/tor-network
+- **GitHub Topics - tor-security**: https://github.com/topics/tor-security
+- **GitHub Topics - tor-hidden-services**: https://github.com/topics/tor-hidden-services
+- **GitHub Topics - tails-os**: https://github.com/topics/tails-os
+
+---
+
 ## Emergency Resources
 
 - **Tor Project Support**: https://support.torproject.org/
@@ -284,3 +325,20 @@ The Tor Project explicitly recommends against using BitTorrent over Tor. If you 
 - In Singapore: Tor is legal, but activities conducted through it must comply with Singapore law
 - Always restart Tor Browser after changing security levels
 - Never use BitTorrent over Tor
+
+---
+
+## Contributing
+
+This is a living document. If you have suggestions for additional resources or corrections, please contribute by:
+1. Opening an issue in this repository
+2. Submitting a pull request with your changes
+3. Ensuring all links are verified and from reputable sources
+
+## Disclaimer
+
+This guide is for educational purposes only. The tools and techniques described here should be used responsibly and in compliance with applicable laws. The maintainers of this repository are not responsible for any misuse of the information provided.
+
+## License
+
+This resource collection is provided as-is for educational purposes. Individual tools and resources are subject to their own licenses.
